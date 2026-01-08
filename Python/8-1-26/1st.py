@@ -1,4 +1,11 @@
+# This is a sample Python script.
+age = 17
 
-print("Hello, World!")
-print("This is the first Python script.")
-print("Let's learn Python together!")
+def greet(name, age):
+    print("Hi " + name + " Your Age is " + str(age))
+
+def main():
+    greet("eg", age)
+
+if __name__ == "__main__":
+    main()
