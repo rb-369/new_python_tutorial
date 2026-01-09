@@ -20,11 +20,19 @@ def Ask():
     elif(age < 18 and age>12):
         print("You are a Teenager")
     else:
-        print("You are a Child")            
+        print("You are a Child")        
+
+def oddOrEven():
+    num = int(input("Enter a number to check if a number is odd or even: "))
+    if(num % 2 == 0):
+        print("The number is Even")
+    else:
+        print("The number is Odd")            
 
 def main():
     greet("eg", age)
-    Ask()
+    # Ask()
+    oddOrEven()
 
 
 if __name__ == "__main__":
