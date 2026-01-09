@@ -4,6 +4,8 @@ age = 17
 def greet(name, age):
     print("Hi " + name + " Your Age is " + str(age))
 
+
+# Determine age category
 def Ask():
 
 
@@ -22,6 +24,8 @@ def Ask():
     else:
         print("You are a Child")        
 
+
+# Check if a number is odd or even
 def oddOrEven():
     num = int(input("Enter a number to check if a number is odd or even: "))
     if(num % 2 == 0):
@@ -29,6 +33,8 @@ def oddOrEven():
     else:
         print(f"{num} The number is Odd")
 
+
+# Check odd or even in a given range
 def oddOrEvenRange():
     lower = int(input("Enter lower range: "))
     upper = int(input("Enter upper range: "))
@@ -41,14 +47,17 @@ def oddOrEvenRange():
         if(num % 2 == 0):
             print(f"{num} The number is Even")
         else:
-            print(f"{num} The number is Odd")                    
+            print(f"{num} The number is Odd") 
 
+
+
+# Main function to execute the script
 def main():
     greet("eg", age)
     # Ask()
     oddOrEven()
     oddOrEvenRange()
 
-
+# Execute main function
 if __name__ == "__main__":
     main()
