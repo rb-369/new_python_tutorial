@@ -27,12 +27,27 @@ def oddOrEven():
     if(num % 2 == 0):
         print(f"{num} The number is Even")
     else:
-        print(f"{num} The number is Odd")            
+        print(f"{num} The number is Odd")
+
+def oddOrEvenRange():
+    lower = int(input("Enter lower range: "))
+    upper = int(input("Enter upper range: "))
+
+    if(lower > upper):
+        print("Invalid Range! Upper range must be greater than lower range.")
+        return
+
+    for num in range(lower, upper + 1):
+        if(num % 2 == 0):
+            print(f"{num} The number is Even")
+        else:
+            print(f"{num} The number is Odd")                    
 
 def main():
     greet("eg", age)
     # Ask()
     oddOrEven()
+    oddOrEvenRange()
 
 
 if __name__ == "__main__":
