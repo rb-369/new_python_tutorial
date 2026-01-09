@@ -25,9 +25,9 @@ def Ask():
 def oddOrEven():
     num = int(input("Enter a number to check if a number is odd or even: "))
     if(num % 2 == 0):
-        print("The number is Even")
+        print(f"{num} The number is Even")
     else:
-        print("The number is Odd")            
+        print(f"{num} The number is Odd")            
 
 def main():
     greet("eg", age)
