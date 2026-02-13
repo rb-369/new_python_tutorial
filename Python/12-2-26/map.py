@@ -55,25 +55,20 @@ products = [
 ]
 
 def to_inr(val):
-    return val*83 > 3000
+    return val*83
 
 def eg2():
     
     pr=[]
     for p in products:
         prices = list(map(to_inr, p))
-        print(prices[1])
-        
-        
-    for p in prices:
-        for i in p:
-            if(i > 3000):
-                pr.append(i)
-            else:
-                continue    
+        pr.append(prices[1])           
 
-    print(pr)
-    
+    for i in pr:
+        if i > 3000:
+            print(i)
+        else:
+            continue    
 
 # Output
 
@@ -110,7 +105,7 @@ def valid():
 
 
 def main():
-    print("MAP")
+    
     # map_eg()
     # valid()
     eg2()
