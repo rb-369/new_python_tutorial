@@ -103,12 +103,24 @@ def valid():
 
     print(usernames)
 
+def strExp():
+    words = ["   Python  ", "AI", "MAchine", "data  "]
+
+    nrml_str = list(map(lambda s: s.strip().lower(), words))
+
+    for n in nrml_str:
+        if len(n) < 5:
+            continue
+        else:
+            print(n)
+
 
 def main():
     
     # map_eg()
     # valid()
-    eg2()
+    # eg2()
+    strExp()
 
 if __name__ == "__main__":
     main()
